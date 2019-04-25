@@ -20,13 +20,13 @@ const FormInput = ({ value, placeHolder, secureTextEntry = false, onChangeText, 
   </View>
 )
 
-const Warning = ({ title }) => <Text style={{ color: 'red' }}>{title}!!</Text>;
+const Warning = ({ title = 'N/A' }) => <Text style={{ color: 'red' }}>{title}!!</Text>;
 
-const LoginButton = ({ title }) => (<TouchableOpacity style={{ borderRadius: 20, backgroundColor: '#262626', width: 100, height: 35, alignItems: 'center', justifyContent: 'center' }}>
+const LoginButton = ({ title = 'N/A' }) => (<TouchableOpacity style={{ borderRadius: 20, backgroundColor: '#262626', width: 100, height: 35, alignItems: 'center', justifyContent: 'center' }}>
   <Text style={{ color: 'white' }}>{title}</Text>
 </TouchableOpacity>)
 
-const Header = ({ message }) => <Text style={{ color: '#262626', paddingBottom: 30 }}>{message}</Text>
+const Header = ({ message = 'N/A' }) => <Text style={{ color: '#262626', paddingBottom: 30 }}>{message}</Text>
 
 export default class LoginScreen extends Component {
 
