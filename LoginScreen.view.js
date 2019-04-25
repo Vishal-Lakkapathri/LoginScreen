@@ -12,7 +12,7 @@ const FormInput = ({ value, placeHolder, secureTextEntry = false, onChangeText, 
       value={value}
       style={{ height: 40, borderColor: '#262626', borderWidth: 1, paddingLeft: 10 }}
       placeholder={placeHolder}
-      placeholderTextColor='#F24130'
+      placeholderTextColor='gray'
       secureTextEntry={secureTextEntry}
       onChangeText={onChangeText}
       autoCapitalize={autoCapitalize}
@@ -26,7 +26,7 @@ const LoginButton = ({ title }) => (<TouchableOpacity style={{ borderRadius: 20,
   <Text style={{ color: 'white' }}>{title}</Text>
 </TouchableOpacity>)
 
-
+const Header = ({ message }) => <Text style={{ color: '#262626', paddingBottom: 30 }}>{message}</Text>
 
 export default class LoginScreen extends Component {
 
@@ -57,6 +57,7 @@ export default class LoginScreen extends Component {
             paddingTop: 80,
             alignItems: 'center',
           }}>
+          <Header message='Please enter the below details to view the Login Button'/>
           <FormInput
             placeHolder='Email'
             value={email}
