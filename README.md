@@ -23,7 +23,7 @@ npm install
 
 ```
 
-To run the application
+To run the packaged
 
 ```
 yarn run start / yarn start
