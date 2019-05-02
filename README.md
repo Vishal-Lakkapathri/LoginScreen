@@ -10,7 +10,7 @@ npm install -g yarn
 
 ### Installing
 
-First clone this repository and run `yarn` on the root folder
+First clone this repository and run `yarn` on the root folder to install the dependencies.
 
 ```
 git clone <repository>
