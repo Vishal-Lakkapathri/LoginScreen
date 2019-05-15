@@ -40,6 +40,12 @@ To run on iOS
 react-native run-ios
 ```
 
+## About App
+
+This is just a Login Screen with `Email` and `Password` field (Includes field validations).
+
+With the appropriate `Email` and `Password` is entered the `Login` button is rendered.
+
 ## Authors
 
 * **Vishal Lakkapathri**
